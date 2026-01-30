@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Event Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">CollegeEMS</div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>College Event Registration & Feedback System</h1>
+  <p>A centralized platform to manage, register, and analyze college events</p>
+</section>
+
+<!-- EVENTS -->
+<section class="events-section">
+  <h2>Upcoming Events</h2>
+
+  <div class="events-grid">
+    <div class="event-card">
+      <img src="images/image1.jpg">
+      <h3>National Hackathon 2026</h3>
+      <p>24-hour coding challenge for innovators.</p>
+      <button onclick="registerEvent('National Hackathon 2026')">Register</button>
+    </div>
+
+    <div class="event-card">
+      <img src="images/image2.jpg">
+      <h3>AI & ML Workshop</h3>
+      <p>Hands-on workshop on Artificial Intelligence.</p>
+      <button onclick="registerEvent('AI & ML Workshop')">Register</button>
+    </div>
+
+    <div class="event-card">
+      <img src="images/image3.jpg">
+      <h3>Career Guidance Seminar</h3>
+      <p>Industry experts guide final-year students.</p>
+      <button onclick="registerEvent('Career Guidance Seminar')">Register</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK -->
+<section class="feedback-section">
+  <h2>Event Feedback</h2>
+  <form class="feedback-form" onsubmit="submitFeedback(event)">
+    <input type="text" placeholder="Student Name" required>
+    <select required>
+      <option value="">Overall Rating</option>
+      <option>Excellent</option>
+      <option>Good</option>
+      <option>Average</option>
+    </select>
+    <textarea placeholder="Your feedback (optional)"></textarea>
+    <button type="submit">Submit Feedback</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 College Event Management System | Final Year Project</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
